@@ -6,11 +6,69 @@
     <title>Basic Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
+      /* body{
+        display: grid;
+        grid-template-columns: 2.5fr 1fr 2fr 2.5fr;
+        grid-template-rows: 2fr 3fr 1fr;
+        grid-template-areas: 
+        '.header header.'
+        '.Nav main.'
+        '.footer footer.';}
+
+        Header{grid-area: header;}
+        Nav{grid-area: Nav;}
+        Main{ grid-area:main}
+        footer{grid-area: footer}.
+
+
+ */
+ 
       /* Doe hier jouw ding! */
+      #basic-layout-1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 6fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 100px; */
+        grid-template-areas:
+        "h h"
+        "n m"
+        "f f";
+          /* "h h h h"
+          "n m m m"
+          "n m m m"
+          "n m m m"
+          "n m m m"
+          "f f f f"; */
+
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+      }
+
+      header {
+        grid-area: h;
+      }
+
+      nav {
+        grid-area: n;
+      }
+
+      main {
+        grid-area: m;
+      }
+
+      footer {
+        grid-area: f;
+      }
+    
+
+
+
+      
     </style>
   </head>
   <body id="basic-layout-1">
-    <header><h1>Basic Layout 1</h1></header>
+    <header><h1>Basic   1</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
